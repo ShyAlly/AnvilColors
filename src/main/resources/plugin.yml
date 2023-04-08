@@ -1,0 +1,87 @@
+name: AnvilColors
+main: com.jeff_media.anvilcolors.AnvilColors
+version: ${version}
+api-version: 1.13
+authors: [JEFF Media GbR, mfnalex]
+commands:
+  anvilcolors:
+    permission: anvilcolors.reload
+    description: Reloads the AnvilColors configuration
+permissions:
+    anvilcolors.reload:
+        description: Allows the user to reload the AnvilColors configuration
+    anvilcolors.color.*:
+        description: Allows to use all colors on anvils
+        children:
+          - anvilcolors.color.black
+          - anvilcolors.color.dark_blue
+          - anvilcolors.color.dark_green
+          - anvilcolors.color.dark_aqua
+          - anvilcolors.color.dark_red
+          - anvilcolors.color.dark_purple
+          - anvilcolors.color.gold
+          - anvilcolors.color.gray
+          - anvilcolors.color.dark_gray
+          - anvilcolors.color.blue
+          - anvilcolors.color.green
+          - anvilcolors.color.aqua
+          - anvilcolors.color.red
+          - anvilcolors.color.light_purple
+          - anvilcolors.color.yellow
+          - anvilcolors.color.white
+    anvilcolors.format.*:
+        description: Allows to use all formatting on anvils
+        children:
+          - anvilcolors.format.obfuscated
+          - anvilcolors.format.bold
+          - anvilcolors.format.strikethrough
+          - anvilcolors.format.underline
+          - anvilcolors.format.italic
+          - anvilcolors.format.reset
+    anvilcolors.hexcolors:
+        description: Allows to use hex colors (#123456) on anvils
+    anvilcolors.color.black:
+        description: Allows to use black color (&0) on anvils
+    anvilcolors.color.dark_blue:
+        description: Allows to use dark blue color (&1) on anvils
+    anvilcolors.color.dark_green:
+        description: Allows to use dark green color (&2) on anvils
+    anvilcolors.color.dark_aqua:
+        description: Allows to use dark aqua color (&3) on anvils
+    anvilcolors.color.dark_red:
+        description: Allows to use dark red color (&4) on anvils
+    anvilcolors.color.dark_purple:
+        description: Allows to use dark purple color (&5) on anvils
+    anvilcolors.color.gold:
+        description: Allows to use gold color (&6) on anvils
+    anvilcolors.color.gray:
+        description: Allows to use gray color (&7) on anvils
+    anvilcolors.color.dark_gray:
+        description: Allows to use dark gray color (&8) on anvils
+    anvilcolors.color.blue:
+        description: Allows to use blue color (&9) on anvils
+    anvilcolors.color.green:
+        description: Allows to use green color (&a) on anvils
+    anvilcolors.color.aqua:
+        description: Allows to use aqua color (&b) on anvils
+    anvilcolors.color.red:
+        description: Allows to use red color (&c) on anvils
+    anvilcolors.color.light_purple:
+        description: Allows to use light purple color (&d) on anvils
+    anvilcolors.color.yellow:
+        description: Allows to use yellow color (&e) on anvils
+    anvilcolors.color.white:
+        description: Allows to use white color (&f) on anvils
+    anvilcolors.format.obfuscated:
+        description: Allows to use obfuscated text (&k) on anvils
+    anvilcolors.format.bold:
+        description: Allows to use bold text (&l) on anvils
+    anvilcolors.format.strikethrough:
+        description: Allows to use strikethrough text (&m) on anvils
+    anvilcolors.format.underline:
+        description: Allows to use underline text (&n) on anvils
+    anvilcolors.format.italic:
+        description: Allows to use italic text (&o) on anvils
+    anvilcolors.format.reset:
+        description: Allows to use reset text (&r) on anvils
+    

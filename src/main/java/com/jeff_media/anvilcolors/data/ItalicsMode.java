@@ -1,4 +1,4 @@
-package com.jeff_media.anvilcolors;
+package com.jeff_media.anvilcolors.data;
 
 public enum ItalicsMode {
     FORCE, // Force italics

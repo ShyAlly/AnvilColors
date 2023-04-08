@@ -1,4 +1,4 @@
-package com.jeff_media.anvilcolors;
+package com.jeff_media.anvilcolors.data;
 
 import org.bukkit.ChatColor;
 
@@ -67,8 +67,13 @@ public enum Color {
         return COLORS_AND_FORMATS;
     }
 
-    public String transform(String input, boolean forceItalics) {
-        return input.replace(colorCode, translation + (forceItalics ? ChatColor.ITALIC : ""));
+    public RenameResult transform(String input, boolean forceItalics) {
+        int colors = 0;
+        while(input.contains(colorCode)) {
+            colors++;
+            input = input.replaceFirst(colorCode, translation + (forceItalics ? ChatColor.ITALIC : ""));
+        }
+        return new RenameResult(input, colors);
     }
 
     private enum Type {

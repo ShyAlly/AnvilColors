@@ -1,0 +1,71 @@
+##################
+#   AnvilColors  #
+##################
+
+# Copyright 2023 JEFF Media GbR
+
+###################
+#   Permissions   #
+###################
+
+# When set to true, players require permissions to use colors and formatting in anvils.
+# See below for a list of permissions.
+require-permissions: false
+
+# Permissions for colors and formatting:
+
+#   anvilcolors.color.* - All below color codes
+#   anvilcolors.color.black - Black color (&0)
+#   anvilcolors.color.dark_blue - Dark blue color (&1)
+#   anvilcolors.color.dark_green - Dark green color (&2)
+#   anvilcolors.color.dark_aqua - Dark aqua color (&3)
+#   anvilcolors.color.dark_red - Dark red color (&4)
+#   anvilcolors.color.dark_purple - Dark purple color (&5)
+#   anvilcolors.color.gold - Gold color (&6)
+#   anvilcolors.color.gray - Gray color (&7)
+#   anvilcolors.color.dark_gray - Dark gray color (&8)
+#   anvilcolors.color.blue - Blue color (&9)
+#   anvilcolors.color.green - Green color (&a)
+#   anvilcolors.color.aqua - Aqua color (&b)
+#   anvilcolors.color.red - Red color (&c)
+#   anvilcolors.color.light_purple - Light purple color (&d)
+#   anvilcolors.color.yellow - Yellow color (&e)
+#   anvilcolors.color.white - White color (&f)
+#   anvilcolors.color.hex - Hex colors (#123456, 1.16+)
+#
+#   anvilcolors.format.* - All below formatting codes
+#   anvilcolors.format.obfuscated - Obfuscated formatting (&k)
+#   anvilcolors.format.bold - Bold formatting (&l)
+#   anvilcolors.format.strikethrough - Strikethrough formatting (&m)
+#   anvilcolors.format.underline - Underline formatting (&n)
+#   anvilcolors.format.italic - Italic formatting (&o)
+#   anvilcolors.format.reset - Reset formatting (&r)
+
+####################
+# General settings #
+####################
+
+# In vanilla, items renamed on an anvil are always in italics. The reset code (&r) or
+# color codes however remove the italics. You can use this option to force italics
+# on all renamed items, or to remove the vanilla italics.
+#
+# Available options:
+#   force: force italics (default)
+#   remove: remove italics
+#   none: do nothing.
+italics: force
+
+# You can apply a cost to using colors and formatting in anvils. When set to 0, using colors
+# doesn't cost any levels.
+# Only available on Spigot 1.11+
+level-cost: 0
+
+# When set to true, the level cost is calculated per color and formatting code, so if you use
+# 2 colors and 1 formatting code, the cost is 3 * level-cost.
+cost-per-color: false
+
+# When true, color codes of an already renamed item will be turned back into the color code
+# when putting it into the anvil again.
+restore-color-codes: true
+
+debug: false

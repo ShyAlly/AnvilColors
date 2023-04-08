@@ -1,5 +1,6 @@
-package com.jeff_media.anvilcolors;
+package com.jeff_media.anvilcolors.command;
 
+import com.jeff_media.anvilcolors.utils.Formatter;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
