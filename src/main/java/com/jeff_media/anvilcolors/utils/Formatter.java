@@ -25,7 +25,7 @@ public class Formatter {
 
         int colors = 0;
 
-        if(VersionUtils.hasHexColorSupport() && hasPermission(permissible,"anvilcolors.hexcolors")) {
+        if(VersionUtils.hasHexColorSupport() && hasPermission(permissible,"anvilcolors.color.hex")) {
             RenameResult result = replaceHexColors(input);
             input = result.getColoredName();
             colors += result.getReplacedColorsCount();

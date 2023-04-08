@@ -19,5 +19,6 @@ public class ReloadCommand implements CommandExecutor {
         plugin.reloadConfig();
         sender.sendMessage(Formatter.colorize("&aAnvilColors reloaded"));
         return true;
+
     }
 }

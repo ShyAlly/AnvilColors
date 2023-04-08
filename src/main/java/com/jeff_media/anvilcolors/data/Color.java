@@ -42,7 +42,7 @@ public enum Color {
     private final String permission;
 
     Color(Type type, char colorChar, String name) {
-        this(type, colorChar, name, "anvilcolors." + type.permissionNode + "." + name);
+        this(type, colorChar, name, "anvilcolors." + type.permissionNode + "." + colorChar);
     }
 
     Color(Type type, char colorChar, String name, String permission) {

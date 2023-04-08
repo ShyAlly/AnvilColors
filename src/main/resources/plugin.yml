@@ -8,80 +8,86 @@ commands:
     permission: anvilcolors.reload
     description: Reloads the AnvilColors configuration
 permissions:
+    anvilcolors.*:
+      children:
+        - anvilcolors.reload
+        - anvilcolors.color.*
+        - anvilcolors.format.*
     anvilcolors.reload:
         description: Allows the user to reload the AnvilColors configuration
     anvilcolors.color.*:
         description: Allows to use all colors on anvils
         children:
-          - anvilcolors.color.black
-          - anvilcolors.color.dark_blue
-          - anvilcolors.color.dark_green
-          - anvilcolors.color.dark_aqua
-          - anvilcolors.color.dark_red
-          - anvilcolors.color.dark_purple
-          - anvilcolors.color.gold
-          - anvilcolors.color.gray
-          - anvilcolors.color.dark_gray
-          - anvilcolors.color.blue
-          - anvilcolors.color.green
-          - anvilcolors.color.aqua
-          - anvilcolors.color.red
-          - anvilcolors.color.light_purple
-          - anvilcolors.color.yellow
-          - anvilcolors.color.white
+          - anvilcolors.color.hex
+          - anvilcolors.color.0
+          - anvilcolors.color.1
+          - anvilcolors.color.2
+          - anvilcolors.color.3
+          - anvilcolors.color.4
+          - anvilcolors.color.5
+          - anvilcolors.color.6
+          - anvilcolors.color.7
+          - anvilcolors.color.8
+          - anvilcolors.color.9
+          - anvilcolors.color.a
+          - anvilcolors.color.b
+          - anvilcolors.color.c
+          - anvilcolors.color.d
+          - anvilcolors.color.e
+          - anvilcolors.color.f
     anvilcolors.format.*:
         description: Allows to use all formatting on anvils
         children:
-          - anvilcolors.format.obfuscated
-          - anvilcolors.format.bold
-          - anvilcolors.format.strikethrough
-          - anvilcolors.format.underline
-          - anvilcolors.format.italic
-          - anvilcolors.format.reset
-    anvilcolors.hexcolors:
+          - anvilcolors.format.k
+          - anvilcolors.format.l
+          - anvilcolors.format.m
+          - anvilcolors.format.n
+          - anvilcolors.format.o
+          - anvilcolors.format.r
+    anvilcolors.color.hex:
         description: Allows to use hex colors (#123456) on anvils
-    anvilcolors.color.black:
+    anvilcolors.color.0:
         description: Allows to use black color (&0) on anvils
-    anvilcolors.color.dark_blue:
+    anvilcolors.color.1:
         description: Allows to use dark blue color (&1) on anvils
-    anvilcolors.color.dark_green:
+    anvilcolors.color.2:
         description: Allows to use dark green color (&2) on anvils
-    anvilcolors.color.dark_aqua:
+    anvilcolors.color.3:
         description: Allows to use dark aqua color (&3) on anvils
-    anvilcolors.color.dark_red:
+    anvilcolors.color.4:
         description: Allows to use dark red color (&4) on anvils
-    anvilcolors.color.dark_purple:
+    anvilcolors.color.5:
         description: Allows to use dark purple color (&5) on anvils
-    anvilcolors.color.gold:
+    anvilcolors.color.6:
         description: Allows to use gold color (&6) on anvils
-    anvilcolors.color.gray:
+    anvilcolors.color.7:
         description: Allows to use gray color (&7) on anvils
-    anvilcolors.color.dark_gray:
+    anvilcolors.color.8:
         description: Allows to use dark gray color (&8) on anvils
-    anvilcolors.color.blue:
+    anvilcolors.color.9:
         description: Allows to use blue color (&9) on anvils
-    anvilcolors.color.green:
+    anvilcolors.color.a:
         description: Allows to use green color (&a) on anvils
-    anvilcolors.color.aqua:
+    anvilcolors.color.b:
         description: Allows to use aqua color (&b) on anvils
-    anvilcolors.color.red:
+    anvilcolors.color.c:
         description: Allows to use red color (&c) on anvils
-    anvilcolors.color.light_purple:
+    anvilcolors.color.d:
         description: Allows to use light purple color (&d) on anvils
-    anvilcolors.color.yellow:
+    anvilcolors.color.e:
         description: Allows to use yellow color (&e) on anvils
-    anvilcolors.color.white:
+    anvilcolors.color.f:
         description: Allows to use white color (&f) on anvils
-    anvilcolors.format.obfuscated:
+    anvilcolors.format.k:
         description: Allows to use obfuscated text (&k) on anvils
-    anvilcolors.format.bold:
+    anvilcolors.format.l:
         description: Allows to use bold text (&l) on anvils
-    anvilcolors.format.strikethrough:
+    anvilcolors.format.m:
         description: Allows to use strikethrough text (&m) on anvils
-    anvilcolors.format.underline:
+    anvilcolors.format.n:
         description: Allows to use underline text (&n) on anvils
-    anvilcolors.format.italic:
+    anvilcolors.format.o:
         description: Allows to use italic text (&o) on anvils
-    anvilcolors.format.reset:
+    anvilcolors.format.r:
         description: Allows to use reset text (&r) on anvils
     
