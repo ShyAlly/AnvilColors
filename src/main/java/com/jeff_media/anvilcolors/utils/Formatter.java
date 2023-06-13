@@ -7,7 +7,6 @@ import net.md_5.bungee.api.ChatColor;
 import org.bukkit.permissions.Permissible;
 import org.bukkit.plugin.Plugin;
 
-import javax.annotation.Nullable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,7 +20,7 @@ public class Formatter {
         this.plugin = plugin;
     }
 
-    public RenameResult colorize(@Nullable Permissible permissible, String input, ItalicsMode italicsMode) {
+    public RenameResult colorize(Permissible permissible, String input, ItalicsMode italicsMode) {
 
         int colors = 0;
 
