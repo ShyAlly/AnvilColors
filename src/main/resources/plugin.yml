@@ -3,6 +3,8 @@ main: com.jeff_media.anvilcolors.AnvilColors
 version: ${version}
 api-version: 1.13
 authors: [JEFF Media GbR, mfnalex]
+softdepend:
+  - EcoEnchants
 commands:
   anvilcolors:
     permission: anvilcolors.reload

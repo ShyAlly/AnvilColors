@@ -7,6 +7,7 @@ import com.jeff_media.anvilcolors.utils.VersionUtils;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.PrepareAnvilEvent;
 import org.bukkit.inventory.AnvilInventory;
@@ -26,7 +27,7 @@ public class AnvilListener implements Listener {
         this.formatter = new Formatter(plugin);
     }
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.HIGHEST)
     public void onAnvilRename(PrepareAnvilEvent event) {
 
         List<HumanEntity> viewers = event.getViewers();

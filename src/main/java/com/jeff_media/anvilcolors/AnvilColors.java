@@ -12,7 +12,9 @@ public class AnvilColors extends JavaPlugin {
     public void onEnable() {
         saveDefaultConfig();
         getCommand("anvilcolors").setExecutor(new ReloadCommand(this));
-        getServer().getPluginManager().registerEvents(new AnvilListener(this), this);
+        getServer().getScheduler().runTaskLater(this, () -> {
+            getServer().getPluginManager().registerEvents(new AnvilListener(this), this);
+        }, 20);
     }
 
     public void debug(String text) {
