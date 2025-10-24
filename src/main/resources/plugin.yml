@@ -3,6 +3,7 @@ main: com.jeff_media.anvilcolors.AnvilColors
 version: ${version}
 api-version: 1.13
 authors: [JEFF Media GbR, mfnalex]
+folia-supported: true
 softdepend:
   - EcoEnchants
 commands:
